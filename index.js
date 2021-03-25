@@ -50,7 +50,7 @@ function Estadistica(Xi, Ni, Xi_Ni , Xi_Ni2) {
 
                     Pregunta5 = answer5
                     console.log("Introduciste el número : " + Pregunta5)
-                    rl.question('Introduce tu numero Ni (Maximo Seis) (6)', (answer6) => {
+                    rl.question('Introduce tu numero Xi (Maximo Seis) (6)', (answer6) => {
 
                         Pregunta6 = answer6
                         console.log("Introduciste el número : " + Pregunta6)
