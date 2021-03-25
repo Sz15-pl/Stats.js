@@ -13,7 +13,7 @@ const str = `
                                        \______/                           
                                                                   " `;
 console.log(str);
-console.log("Programa hecho por Samuel del IES LA VEGA DE SAN JOSE")
+console.log("Programa hecho por Samuel")
 const readline = require('readline');
 const log = require('./log.js')
 const rl = readline.createInterface({
