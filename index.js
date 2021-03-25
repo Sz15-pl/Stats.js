@@ -5,7 +5,7 @@
 
 
 
-   const str = `                                      
+  const str = `                                      
                                                                          
    $$$$$$                                      
   /$$__  $$ | $$                | $$                     
@@ -21,66 +21,96 @@
                                                                   " `;
 console.log(str);
 console.log("Programa hecho por Samuel del IES LA VEGA DE SAN JOSE")
+const readline = require('readline');
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
 
 
 function Estadistica(Xi, Ni, Xi_Ni , Xi_Ni2) {
-this.Xi = Xi;
-this.Ni = Ni;
-this.Xi_Ni = Xi_Ni;
-this.Xi_Ni2 = Xi_Ni2
-}
-console.log("Stats.JS");
+    this.Xi = Xi;
+    this.Ni = Ni;
+    this.Xi_Ni = Xi_Ni;
+    this.Xi_Ni2 = Xi_Ni2
+    }
+    
+rl.question('Introduce tu numero Xi (Maximo Seis) (6)', (answer1) => {
 
-var Respuesta1 = prompt("Dime tu primer numero xi");
-console.log("Colocado en la tabla:", Respuesta1);
-var Respuesta2 = prompt("Dime tu primer numero xi");
-console.log("Colocado en la tabla:", Respuesta2);
-var Respuesta3 = prompt("Dime tu segundo numero xi");
-console.log("Colocado en la tabla:", Respuesta3);
-var Respuesta4 = prompt("Dime tu tercer numero xi");
-console.log("Colocado en la tabla:", Respuesta4);
-var Respuesta5 = prompt("Dime tu cuarto numero xi");
-console.log("Colocado en la tabla:", Respuesta5);
-var Respuesta6 = prompt("Dime tu quinto numero xi");
-console.log("Colocado en la tabla:", Respuesta6);
-var Respuesta7 = prompt("Dime tu primer numero ni");
-console.log("Colocado en la tabla:", Respuesta7);
-var Respuesta8 = prompt("Dime tu segundo numero ni");
-console.log("Colocado en la tabla:", Respuesta8);
-var Respuesta9 = prompt("Dime tu tercer numero ni");
-console.log("Colocado en la tabla:", Respuesta9);
-var Respuesta10 = prompt("Dime tu cuarto numero ni");
-console.log("Colocado en la tabla:", Respuesta10);
-var Respuesta11 = prompt("Dime tu quinto numero ni");
-console.log("Colocado en la tabla:", Respuesta11);
-var Respuesta12 = prompt("Dime tu sexto numero ni");
-console.log("Colocado en la tabla:", Respuesta12);
+    Pregunta1 = answer1
+    console.log(Pregunta1)
+    rl.question('Introduce tu numero Xi (Maximo Seis) (6)', (answer2) => {
 
+        Pregunta2 = answer2
+        console.log(Pregunta2)
+        rl.question('Introduce tu numero Xi (Maximo Seis) (6)', (answer3) => {
 
-var xi = Respuesta1
-var ni = Respuesta7
+            Pregunta3 = answer3
+            console.log(Pregunta3)
+            rl.question('Introduce tu numero Xi (Maximo Seis) (6)', (answer4) => {
+
+                Pregunta4 = answer4
+                console.log(Pregunta4)
+                rl.question('Introduce tu numero Xi (Maximo Seis) (6)', (answer5) => {
+
+                    Pregunta5 = answer5
+                    console.log(Pregunta5)
+                    rl.question('Introduce tu numero Ni (Maximo Seis) (6)', (answer6) => {
+
+                        Pregunta6 = answer6
+                        console.log(Pregunta6)
+                        rl.question('Introduce tu numero Ni (Maximo Seis) (6)', (answer7) => {
+
+                            Pregunta7 = answer7
+                            console.log(Pregunta7)
+                            rl.question('Introduce tu numero Ni (Maximo Seis) (6)', (answer8) => {
+
+                                Pregunta8 = answer8
+                                console.log(Pregunta8)
+                                rl.question('Introduce tu numero Ni (Maximo Seis) (6)', (answer9) => {
+
+                                    Pregunta9 = answer9
+                                    console.log(Pregunta9)
+                                    rl.question('Introduce tu numero Ni (Maximo Seis) (6)', (answer10) => {
+
+                                        Pregunta10 = answer10
+                                        console.log(Pregunta10)
+                                        rl.question('Introduce tu numero Ni (Maximo Seis) (6)', (answer11) => {
+
+                                            Pregunta11 = answer11
+                                            console.log(Pregunta11)
+                                            rl.question('Introduce tu numero Ni (Maximo Seis) (6)', (answer12) => {
+
+                                                Pregunta12 = answer12
+                                                console.log(Pregunta12)
+
+                                             
+
+var xi = answer1
+var ni = answer7
 var xini = xi * ni
 /////2FILA////
-var xi1 = Respuesta2
-var ni1 = Respuesta8
+var xi1 = answer2
+var ni1 = answer8
 var xini1 = xi1 * ni1
 ////3FILA////
-var xi2 = Respuesta3
-var ni2 = Respuesta9
+var xi2 = answer3
+var ni2 = answer9
 var xini2 = xi2 * ni2
 //////4Fila//////
 
 //////5/////////
-var xi3 = Respuesta4
-var ni3 = Respuesta10
+var xi3 = answer4
+var ni3 = answer10
 var xini3 = xi3 * ni3
 /////6/////
-var xi4 = Respuesta5
-var ni4 = Respuesta11
+var xi4 = answer5
+var ni4 = answer11
 var xini4 = xi4 * ni4
 /////7/////
-var xi5 = Respuesta6
-var ni5 = Respuesta12
+var xi5 = answer6
+var ni5 = answer12
 var xini5 = xi5 * ni5
 ///////////////////////////////
 
@@ -109,7 +139,7 @@ xinial2 + xini1al2 + xini2al2 + xini3al2 +xini4al2 + xini5al2);
 
 
 
-
+// He aprovechado la función de console.table para hacer la tabla de xi, fi, xi*fi etc...
 console.table([PrimeraFila,SegundaFila, TerceraFila, CuartaFila, QuintaFila, SextaFila, 
 FilaParaSepararNi, ,FilaParaSumarNi,
 ]);
@@ -130,4 +160,19 @@ console.log(`La moda es ${moda}`)
 console.log('La media es igual a = ' + media)
     
 
-    ///Fuentes: stackoverflow.com y https://developer.mozilla.org/es/docs
+    
+
+                  });
+                });
+              });
+            });
+          });
+         });
+       });
+      });
+     });
+    });
+   });
+  });
+  
+///Fuentes: stackoverflow.com y https://developer.mozilla.org/es/docs
