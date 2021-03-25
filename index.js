@@ -1,11 +1,4 @@
-//     \___ \| __/ _` | __/ __| _  | \___ \ //
-  //      ___) | || (_| | |_\__ \|  |_| |___) | //
-   //     |____/ \__\__,_|\__|___(_)___/|____/ // Programa creado por Samuel Ponce Luna, estudiante del IES La Vega De San jose
-
-
-
-
-  const str = `                                      
+const str = `                                      
                                                                          
    $$$$$$                                      
   /$$__  $$ | $$                | $$                     
@@ -22,7 +15,7 @@
 console.log(str);
 console.log("Programa hecho por Samuel del IES LA VEGA DE SAN JOSE")
 const readline = require('readline');
-
+const log = require('./log.js')
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
@@ -35,56 +28,57 @@ function Estadistica(Xi, Ni, Xi_Ni , Xi_Ni2) {
     this.Xi_Ni = Xi_Ni;
     this.Xi_Ni2 = Xi_Ni2
     }
-    
-rl.question('Introduce tu numero Xi (Maximo Seis) (6)', (answer1) => {
+    log.red("")
+    rl.question('Introduce tu numero Xi (Maximo Seis) (6)', (answer1) => {
 
     Pregunta1 = answer1
-    console.log(Pregunta1)
+    console.log("Introduciste el número : " + Pregunta1)
+
     rl.question('Introduce tu numero Xi (Maximo Seis) (6)', (answer2) => {
 
         Pregunta2 = answer2
-        console.log(Pregunta2)
+        console.log("Introduciste el número : " + Pregunta2)
         rl.question('Introduce tu numero Xi (Maximo Seis) (6)', (answer3) => {
 
             Pregunta3 = answer3
-            console.log(Pregunta3)
+            console.log("Introduciste el número : " + Pregunta3)
             rl.question('Introduce tu numero Xi (Maximo Seis) (6)', (answer4) => {
 
                 Pregunta4 = answer4
-                console.log(Pregunta4)
+                console.log("Introduciste el número : " + Pregunta4)
                 rl.question('Introduce tu numero Xi (Maximo Seis) (6)', (answer5) => {
 
                     Pregunta5 = answer5
-                    console.log(Pregunta5)
+                    console.log("Introduciste el número : " + Pregunta5)
                     rl.question('Introduce tu numero Ni (Maximo Seis) (6)', (answer6) => {
 
                         Pregunta6 = answer6
-                        console.log(Pregunta6)
+                        console.log("Introduciste el número : " + Pregunta6)
                         rl.question('Introduce tu numero Ni (Maximo Seis) (6)', (answer7) => {
 
                             Pregunta7 = answer7
-                            console.log(Pregunta7)
+                            console.log("Introduciste el número : " + Pregunta7)
                             rl.question('Introduce tu numero Ni (Maximo Seis) (6)', (answer8) => {
 
                                 Pregunta8 = answer8
-                                console.log(Pregunta8)
+                                console.log("Introduciste el número : " + Pregunta8)
                                 rl.question('Introduce tu numero Ni (Maximo Seis) (6)', (answer9) => {
 
                                     Pregunta9 = answer9
-                                    console.log(Pregunta9)
+                                    console.log("Introduciste el número : " + Pregunta9)
                                     rl.question('Introduce tu numero Ni (Maximo Seis) (6)', (answer10) => {
 
                                         Pregunta10 = answer10
-                                        console.log(Pregunta10)
+                                        console.log("Introduciste el número : " + Pregunta10)
                                         rl.question('Introduce tu numero Ni (Maximo Seis) (6)', (answer11) => {
 
                                             Pregunta11 = answer11
-                                            console.log(Pregunta11)
+                                            console.log("Introduciste el número : " + Pregunta11)
                                             rl.question('Introduce tu numero Ni (Maximo Seis) (6)', (answer12) => {
 
                                                 Pregunta12 = answer12
-                                                console.log(Pregunta12)
-
+                                                console.log("Introduciste el número : " + Pregunta12)
+                                                
                                              
 
 var xi = answer1
@@ -140,6 +134,7 @@ xinial2 + xini1al2 + xini2al2 + xini3al2 +xini4al2 + xini5al2);
 
 
 // He aprovechado la función de console.table para hacer la tabla de xi, fi, xi*fi etc...
+
 console.table([PrimeraFila,SegundaFila, TerceraFila, CuartaFila, QuintaFila, SextaFila, 
 FilaParaSepararNi, ,FilaParaSumarNi,
 ]);
@@ -153,6 +148,7 @@ const mediaCuadrado = Math.pow(media, 2)
 
 const varianza = sumatorio / N - mediaCuadrado
 const DesviacionTipica = Math.sqrt(sumatorio / N - mediaCuadrado)
+log.red("")
 console.log(`La varianza es ${varianza}`)
 console.log(`La desviación tipica es = ${DesviacionTipica}`)
 console.log(`La media al ^2 es ${mediaCuadrado}`)
@@ -160,7 +156,7 @@ console.log(`La moda es ${moda}`)
 console.log('La media es igual a = ' + media)
     
 
-    
+
 
                   });
                 });
@@ -174,5 +170,6 @@ console.log('La media es igual a = ' + media)
     });
    });
   });
+  
   
 ///Fuentes: stackoverflow.com y https://developer.mozilla.org/es/docs
