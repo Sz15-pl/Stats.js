@@ -15,7 +15,7 @@ const str = `
 console.log(str);
 console.log("Programa hecho por Samuel")
 const readline = require('readline');
-const log = require('./log.js')
+
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
@@ -28,7 +28,7 @@ function Estadistica(Xi, Ni, Xi_Ni , Xi_Ni2) {
     this.Xi_Ni = Xi_Ni;
     this.Xi_Ni2 = Xi_Ni2
     }
-    log.red("")
+   
     rl.question('Introduce tu numero Xi (Maximo Seis) (6)', (answer1) => {
 
     Pregunta1 = answer1
@@ -148,7 +148,7 @@ const mediaCuadrado = Math.pow(media, 2)
 
 const varianza = sumatorio / N - mediaCuadrado
 const DesviacionTipica = Math.sqrt(sumatorio / N - mediaCuadrado)
-log.red("")
+
 console.log(`La varianza es ${varianza}`)
 console.log(`La desviación tipica es = ${DesviacionTipica}`)
 console.log(`La media al ^2 es ${mediaCuadrado}`)
